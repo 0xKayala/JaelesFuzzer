@@ -16,7 +16,7 @@
 
 ### Tools included:
 [ParamSpider](https://github.com/0xKayala/ParamSpider) `git clone https://github.com/0xKayala/ParamSpider.git`<br><br>
-[Nuclei](https://github.com/projectdiscovery/nuclei) `git clone https://github.com/projectdiscovery/nuclei.git`
+[Jaeles](https://github.com/jaeles-project/jaeles) `git clone https://github.com/jaeles-project/jaeles.git`
 
 ### Signatures:
 [Jaeles Fuzzing Signatures](https://github.com/0xKayala/jaeles-signatures) `git clone https://github.com/0xKayala/jaeles-signatures.git`
