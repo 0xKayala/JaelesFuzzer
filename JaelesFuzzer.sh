@@ -48,7 +48,7 @@ fi
 # Check if jaeles signatures are already cloned.
 if [ ! -d "$home_dir/jaeles-signatures" ]; then
     echo "Cloning jaeles-signatures..."
-    git clone --depth=1 https://github.com/0xKayala/jaeles-signatures "$home_dir/jaeles-signatures" && jaeles config -a reload --signDir "$home_dir/jaeles-signatures"
+    git clone --depth=1 https://github.com/0xKayala/jaeles-signatures "$home_dir/jaeles-signatures"
 fi
 
 # Check if httpx is installed, if not, install it
@@ -56,6 +56,9 @@ if ! command -v httpx -up &> /dev/null; then
     echo "Installing httpx..."
     go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
 fi
+
+# Check is Jaeles signatures DB is loaded or not
+jaeles config -a reload --signDir "$home_dir/jaeles-signatures/"
 
 # Parse command line arguments
 while [[ $# -gt 0 ]]
