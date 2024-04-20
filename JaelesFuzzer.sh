@@ -39,16 +39,16 @@ if [ ! -d "$home_dir/ParamSpider" ]; then
     git clone https://github.com/0xKayala/ParamSpider "$home_dir/ParamSpider"
 fi
 
-# Check if jaeles signatures are already cloned.
-if [ ! -d "$home_dir/jaeles-signatures" ]; then
-    echo "Cloning jaeles-signatures..."
-    git clone https://github.com/0xKayala/jaeles-signatures.git "$home_dir/jaeles-signatures"
-fi
-
 # Check if jaeles is installed, if not, install it
 if ! command -v jaeles &> /dev/null; then
     echo "Installing Jaeles..."
     go install github.com/jaeles-project/jaeles@latest
+fi
+
+# Check if jaeles signatures are already cloned.
+if [ ! -d "$home_dir/jaeles-signatures" ]; then
+    echo "Cloning jaeles-signatures..."
+    git clone --depth=1 https://github.com/0xKayala/jaeles-signatures "$home_dir/jaeles-signatures" && jaeles config -a reload --signDir "$home_dir/jaeles-signatures"
 fi
 
 # Check if httpx is installed, if not, install it
