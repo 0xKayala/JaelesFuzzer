@@ -21,14 +21,11 @@
 ### Signatures:
 [Jaeles Fuzzing Signatures](https://github.com/0xKayala/jaeles-signatures) `git clone https://github.com/0xKayala/jaeles-signatures.git`
 
-
 ## Screenshot
 ![image](https://github.com/0xKayala/JaelesFuzzer/assets/16838353/cef623cb-b5be-441c-85f9-0c7049d7faee)
 
-
 ## Output
-![image](https://github.com/0xKayala/JaelesFuzzer/assets/16838353/869d0628-aaa9-4276-bf0c-9b7d4671bdc7)
-
+![image](https://github.com/0xKayala/JaelesFuzzer/assets/16838353/bd7c520d-d450-4f3c-8181-924642e6c72f)
 
 ## Usage
 
