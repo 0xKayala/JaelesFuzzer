@@ -118,11 +118,11 @@ if [ -n "$domain" ]; then
     # Use a temporary file to store the sorted and unique URLs
     temp_file=$(mktemp)
     sort "output/$domain.yaml" | uniq > "$temp_file"
-    httpx -silent -mc 200,301,302,403 -l "$temp_file" | jaeles scan -c 50 -s /home/kali/jaeles-signatures/fuzz/common
+    httpx -silent -mc 200,301,302,403 -l "$temp_file" | jaeles scan -c 50 -s "$home_dir/jaeles-signatures/fuzz/common"
     rm -r "$temp_file"  # Remove the temporary file
 elif [ -n "$filename" ]; then
     sort "$output_file" | uniq > "$temp_file"
-    httpx -silent -mc 200,301,302,403 -l "$temp_file" | jaeles scan -c 50 -s /home/kali/jaeles-signatures/fuzz/common
+    httpx -silent -mc 200,301,302,403 -l "$temp_file" | jaeles scan -c 50 -s "$home_dir/jaeles-signatures/fuzz/common"
     rm -r "$temp_file"  # Remove the temporary file
 fi
 
