@@ -27,6 +27,7 @@
 
 
 ## Output
+![image](https://github.com/0xKayala/JaelesFuzzer/assets/16838353/869d0628-aaa9-4276-bf0c-9b7d4671bdc7)
 
 
 ## Usage
@@ -58,7 +59,7 @@ git clone https://github.com/0xKayala/JaelesFuzzer.git && cd JaelesFuzzer && sud
 
 ## Examples:
 
-Here are a few examples of how to use NucleiFuzzer:
+Here are a few examples of how to use JaelesFuzzer:
 
 - Run `JaelesFuzzer` on a single domain:
 
