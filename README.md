@@ -23,6 +23,7 @@
 
 
 ## Screenshot
+![image](https://github.com/0xKayala/JaelesFuzzer/assets/16838353/cef623cb-b5be-441c-85f9-0c7049d7faee)
 
 
 ## Output
