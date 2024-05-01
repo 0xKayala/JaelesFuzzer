@@ -127,4 +127,4 @@ elif [ -n "$filename" ]; then
 fi
 
 # Step 6: End with a general message as the scan is completed
-echo "Scan is completed - Happy Fuzzing"
+echo "Scan is completed - Happy Hunting"
